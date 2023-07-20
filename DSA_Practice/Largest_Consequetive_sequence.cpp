@@ -24,13 +24,16 @@ Approach:-
 
 // Better Approach:- Sort and compare elements 
 // Time Complexity:- O(nlogn), Space Complexity:- O(1)
-// Better approach code:- 
+// Better approach code:- visual all the sequences in the array 
+// Best Approach:- create a set of all element and check if arr[i] is start of sequence if not find the right element to it and length of sequence
+// Time Complexity:- O(n), Space Complexity:- O(1)
 
 #include<iostream>
 #include <vector>
+#include<unordered_set>
 using namespace std;
 
-int longestConsecutive(vector<int>& nums) {
+int betterApproachLongestConsecutive(vector<int>& nums) {
     int n = nums.size();
 	sort(nums.begin(),nums.end());
 	int curr_max = 0,longest = 1, mn = INT_MIN;
@@ -50,6 +53,22 @@ int longestConsecutive(vector<int>& nums) {
 	return longest;
     }
 
+	int bestLongestConsecutive(vector<int>& nums) {
+        unordered_set<int>s(nums.begin(), nums.end());
+        int longest = 0;
+        for(auto n: s){
+            //if this is the start of the sequence
+            if(!s.count(n - 1)){
+                int length = 1; 
+                while(s.count(n + length))
+                    ++length;
+                longest = max(longest, length);
+            } 
+
+        }
+        return longest;
+    }
+
 int main(){
     std::vector<int> arr;
 	arr.push_back(0);
@@ -62,7 +81,7 @@ int main(){
 	arr.push_back(6);
 	arr.push_back(0);
 	arr.push_back(1);
-    std::cout<<longestConsecutive(arr);
+    std::cout<<bestLongestConsecutive(arr);
 	cout<<endl;
 	return 0;
 }
