@@ -23,9 +23,10 @@ Approach:-
 */
 
 // Better Approach:- Sort and compare elements 
-    // Time Complexity:- O(nlogn), Space Complexity:- O(1)
+// Time Complexity:- O(nlogn), Space Complexity:- O(1)
+// Better approach code:- 
 
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 int longestConsecutive(vector<int>& nums) {
