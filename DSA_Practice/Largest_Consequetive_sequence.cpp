@@ -26,7 +26,8 @@ Approach:-
 // Time Complexity:- O(nlogn), Space Complexity:- O(1)
 // Better approach code:- 
 
-#include <bits/stdc++.h>
+#include<iostream>
+#include <vector>
 using namespace std;
 
 int longestConsecutive(vector<int>& nums) {
@@ -50,6 +51,18 @@ int longestConsecutive(vector<int>& nums) {
     }
 
 int main(){
-    vector<int> arr{0,3,7,2,5,8,4,6,0,1};
-    cout<<longestConsecutive(arr);
+    std::vector<int> arr;
+	arr.push_back(0);
+	arr.push_back(3);
+	arr.push_back(7);
+	arr.push_back(2);
+	arr.push_back(5);
+	arr.push_back(8);
+	arr.push_back(4);
+	arr.push_back(6);
+	arr.push_back(0);
+	arr.push_back(1);
+    std::cout<<longestConsecutive(arr);
+	cout<<endl;
+	return 0;
 }
