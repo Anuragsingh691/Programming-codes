@@ -9,34 +9,14 @@ The codes are written in cpp as of now , but can also include other languages as
 3. Code with several approach
 
 # Prerequisites:-
-Android Studio Download
-Kotlin programming language
-Gradle build system
+Code Editor
 
 # Setup:-
 Clone the repository or download the project source code.
-Open the project in Android Studio.
-Build the project to resolve dependencies.
-
-# Dependencies:-
-The app uses the following dependencies:
-
-Retrofit: For making network calls and interacting with the Swipe public API.
-Coroutine: For handling asynchronous tasks and background operations.
-Koin: For dependency injection and managing the app's components.
-Navigation Component: For handling navigation between screens or fragments.
-Please refer to the app's build.gradle file for the specific versions of these dependencies.
-
-# Usage:-
-Import the project into Android Studio.
-Run the app on an Android device or emulator.
-The app will fetch data from the Swipe public API using Retrofit and display it in the RecyclerView.
-Users can switch to another server by changing the URL dynamically.
-Contributing
-Contributions to the project are welcome. If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on the GitHub repository.
+Open the project in any code editor and run the programs.
 
 # Acknowledgments:-
-The Android developer community for their valuable resources and tutorials.
+NeetCode.io for all the practice session and organised format of questions , leetcode and takeUforward for all the solution videos and better explaination.
 
 # Contact:-
 For any inquiries or support, please contact [Anurag Shishodia] at [anuragshishodia691.gzb@gmail.com].
